@@ -1,0 +1,10 @@
+^C:\USERS\NGUAL\ONEDRIVE - IMPERIAL COLLEGE LONDON\INTERNSHIP EXPERIENCE UK\GOOGLE-CODE-SAMPLE\CPP\BUILD\_DEPS\GOOGLETEST-SUBBUILD\CMAKEFILES\15C114B45FE7884673ECF2F7006666FF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/_deps/googletest-subbuild" "-BC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/_deps/googletest-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/_deps/googletest-subbuild/googletest-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

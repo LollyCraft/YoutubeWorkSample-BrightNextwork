@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\9836f2385b7c46c6006afa843f1942b1\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\1080ef2daca6e1f0e8f0515c3b597216\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\15c114b45fe7884673ecf2f7006666ff\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{76BBB0CC-40CE-36E0-A34D-1F4BB1C90360}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4509FB9E-3F60-3FC7-8956-24E23EC7686D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp" "-BC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build" --check-stamp-file "C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp" "-BC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build" --check-stamp-file "C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp" "-BC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build" --check-stamp-file "C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp" "-BC:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build" --check-stamp-file "C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeCXXCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\ZERO_CHECK.vcxproj">
+      <Project>{C8214055-0A68-3B1A-80E6-04DB7FC6D4AB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-build\googlemock\gmock.vcxproj">
+      <Project>{F6EA4341-A580-3FE3-855A-C30B37C61BF5}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-build\googlemock\gmock_main.vcxproj">
+      <Project>{05B547F8-1BDA-32F3-88B3-1A1A897336E6}</Project>
+      <Name>gmock_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{418710C0-155B-3DBF-84D4-0B29B71ADE6C}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{D6E2DA80-8105-3E05-B3BA-FD0F60D203A9}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\part1_test.vcxproj">
+      <Project>{356BF34C-A29F-3C4B-ADA4-6EC426CB26E4}</Project>
+      <Name>part1_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\part2_test.vcxproj">
+      <Project>{C4C834AA-A8CA-3BFE-B5D2-F654C1529DBC}</Project>
+      <Name>part2_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\part3_test.vcxproj">
+      <Project>{C8A81E65-6DE9-36DF-8808-2B79ABF42E0D}</Project>
+      <Name>part3_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\part4_test.vcxproj">
+      <Project>{E6DB9F68-1DFE-32E6-A7AE-730C7D5F68B6}</Project>
+      <Name>part4_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\videolibrary_test.vcxproj">
+      <Project>{ADE21676-F9B0-318A-A681-1FD99ECB2411}</Project>
+      <Name>videolibrary_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\youtube.vcxproj">
+      <Project>{081AFB40-247D-38A3-B2AC-5058414EEF29}</Project>
+      <Name>youtube</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\build\youtube_lib.vcxproj">
+      <Project>{A5E786CD-5B35-32F3-87F8-D62C5C5B8D80}</Project>
+      <Name>youtube_lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

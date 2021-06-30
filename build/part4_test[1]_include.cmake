@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/part4_test[1]_tests.cmake")
+  include("C:/Users/ngual/OneDrive - Imperial College London/Internship Experience UK/google-code-sample/cpp/build/part4_test[1]_tests.cmake")
+else()
+  add_test(part4_test_NOT_BUILT part4_test_NOT_BUILT)
+endif()

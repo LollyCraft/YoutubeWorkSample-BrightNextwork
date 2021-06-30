@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\commandparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\videolibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\videoplayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\videoplaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\commandparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\videolibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\videoplayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\src\videoplaylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngual\OneDrive - Imperial College London\Internship Experience UK\google-code-sample\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3AA865B0-E73F-3250-A2E3-F8F0FC9D7BA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B30B3C99-8A8A-3F8C-A201-C7A40644E3F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
