@@ -4,6 +4,6 @@ Playlist::Playlist () {
 
 }
 
-Playlist::Playlist (std::string iname) {
-    name = iname;
+Playlist::Playlist(std::string iname) :
+    name(std::move(iname)) {
 }

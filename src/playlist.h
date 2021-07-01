@@ -10,7 +10,7 @@ class Playlist {
  public:
     std::string name;
     std::vector<std::string> includedVideoIds;
-
+    
     Playlist();
     Playlist(std::string iname);
     

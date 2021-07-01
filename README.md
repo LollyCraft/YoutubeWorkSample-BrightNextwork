@@ -69,7 +69,7 @@ cmake --build build/
 To run:
 
 ```shell script
-./build/youtube
+./build/Debug/youtube
 ```
 
 To run all the tests:
@@ -81,10 +81,10 @@ ctest --test-dir build --output-on-failure
 To run tests for a single Part (after building):
 
 ```shell script
-./build/part1_test
-./build/part2_test
-./build/part3_test
-./build/part4_test
+./build/Debug/part1_test
+./build/Debug/part2_test
+./build/Debug/part3_test
+./build/Debug/part4_test
 ```
 
 To run a subset of the tests, in this example, all tests of part 1 that contain
