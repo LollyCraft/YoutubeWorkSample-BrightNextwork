@@ -27,13 +27,14 @@ bool condition(std::string a, std::string b){
 }
 
 void VideoPlayer::showAllVideos() {
-  std::vector<std::string> videoNameVector;
   std::cout << "Here's a list of all available videos:" << std::endl;
-  for (Video vid : mVideoLibrary.getVideos()) {
-    videoNameVector.push_back(vid.getTitle());
-  }
 
-  std::sort(videoNameVector.begin(), videoNameVector.end(), condition);
+  if (videoNameVector.empty()) {
+    for (Video vid : mVideoLibrary.getVideos()) {
+      videoNameVector.push_back(vid.getTitle());
+    }
+    std::sort(videoNameVector.begin(), videoNameVector.end(), condition);
+  }
 
   for (std::string title : videoNameVector) {
     for (Video vid : mVideoLibrary.getVideos()) {
@@ -48,7 +49,6 @@ void VideoPlayer::showAllVideos() {
 //========================================================================
 
 void VideoPlayer::playVideo(const std::string& videoId) {
-  //std::cout << "playVideo needs implementation" << std::endl;
   bool found_vid = false;
   for (Video vid : mVideoLibrary.getVideos()) {
     if (found_vid == false) {
@@ -73,7 +73,6 @@ void VideoPlayer::playVideo(const std::string& videoId) {
 //========================================================================
 
 void VideoPlayer::stopVideo() {
-  //std::cout << "stopVideo needs implementation" << std::endl;
   if (videoPlaying == true) {
     std::cout << "Stopping video: " << currentlyPlayingVideo.getTitle() << std::endl;
     videoPlaying = false;
@@ -88,13 +87,14 @@ void VideoPlayer::playRandomVideo() {
   std::cout << "playRandomVideo needs implementation" << std::endl;
   
   if (mVideoLibrary.getVideos().size() != 0) {
-    // if (videoPlaying == true) {
-    //   std::cout << "Stopping video: " << currentlyPlayingVideo.getTitle() << std::endl;
-    // }
+    if (videoPlaying == true) {
+      std::cout << "Stopping video: " << currentlyPlayingVideo.getTitle() << std::endl;
+    }
     std::cout << "paying random vid" << std::endl;
     // auto random_vid = std::next(std::begin(mVideoLibrary.getVideos()), rand() % (mVideoLibrary.getVideos().size()) );
     // Video r_vid = random_vid[0];
     // playVideo(r_vid.getVideoId());
+    //cannot get the random index to point to a video in the map
   } else {
     std::cout << "No videos available" <<std::endl;
   }
@@ -103,7 +103,6 @@ void VideoPlayer::playRandomVideo() {
 //========================================================================
 
 void VideoPlayer::pauseVideo() {
-  //std::cout << "pauseVideo needs implementation" << std::endl;
   if (videoPlaying == true && videoPaused == false) {
     videoPaused = true;
     std::cout << "Pausing video: " << currentlyPlayingVideo.getTitle() << std::endl;
@@ -117,7 +116,6 @@ void VideoPlayer::pauseVideo() {
 //========================================================================
 
 void VideoPlayer::continueVideo() {
-  //std::cout << "continueVideo needs implementation" << std::endl;
   if (videoPlaying == true && videoPaused == true) {
     videoPaused = false;
     std::cout << "Continuing video: " << currentlyPlayingVideo.getTitle() << std::endl;
@@ -131,7 +129,6 @@ void VideoPlayer::continueVideo() {
 //========================================================================
 
 void VideoPlayer::showPlaying() {
-  //std::cout << "showPlaying needs implementation" << std::endl;
   if (videoPlaying == true) {
     if (videoPaused == false) {
       std::cout << "Currently playing: ";
@@ -151,7 +148,6 @@ void VideoPlayer::showPlaying() {
 // creating a new data structure similar to VideoLibrary for Playlists
 
 void VideoPlayer::createPlaylist(const std::string& playlistName) {
-  // std::cout << "createPlaylist needs implementation" << std::endl;
   bool playlistExists = false;
   for (Playlist p : playlistsVector) {
     if (p.name == playlistName) {
@@ -171,7 +167,6 @@ void VideoPlayer::createPlaylist(const std::string& playlistName) {
 
 void VideoPlayer::addVideoToPlaylist(const std::string& playlistName,
                                      const std::string& videoId) {
-  // std::cout << "addVideoToPlaylist needs implementation" << std::endl;
   bool videoExists = false;
   bool playlistExists = false;
   bool videoAlreadyAdded = false;
@@ -219,7 +214,6 @@ void VideoPlayer::addVideoToPlaylist(const std::string& playlistName,
 //========================================================================
 
 void VideoPlayer::showAllPlaylists() {
-  // std::cout << "showAllPlaylists needs implementation" << std::endl;
   if (playlistsVector.size() == 0) {
     std::cout << "No playlists exist yet" << std::endl;
   } else {
@@ -233,7 +227,6 @@ void VideoPlayer::showAllPlaylists() {
 //========================================================================
 
 void VideoPlayer::showPlaylist(const std::string& playlistName) {
-  // std::cout << "showPlaylist needs implementation" << std::endl;
   bool playlistExists = false;
   for (Playlist p : playlistsVector) {
       if (p.name == playlistName) {
@@ -265,7 +258,6 @@ void VideoPlayer::showPlaylist(const std::string& playlistName) {
 
 void VideoPlayer::removeFromPlaylist(const std::string& playlistName,
                                      const std::string& videoId) {
-  // std::cout << "removeFromPlaylist needs implementation" << std::endl;
   bool videoExists = false;
   bool playlistExists = false;
   bool videoInPlaylist = false;
@@ -295,7 +287,6 @@ void VideoPlayer::removeFromPlaylist(const std::string& playlistName,
         if (p.name == playlistName) {
           if (videoInPlaylist == true) {
             p.includedVideoIds.push_back(videoToBeAddedId);
-            // videoAlreadyAdded = true;
             std::cout << "Removed video from " << playlistName << ": " << mVideoLibrary.getVideo(videoId)->getTitle() << std::endl;
             // std::cout << p.includedVideoIds.size() << std::endl;
           } else {
@@ -314,7 +305,6 @@ void VideoPlayer::removeFromPlaylist(const std::string& playlistName,
 //========================================================================
 
 void VideoPlayer::clearPlaylist(const std::string& playlistName) {
-  // std::cout << "clearPlaylist needs implementation" << std::endl;
   bool playlistExists = false;
 
 
@@ -339,7 +329,6 @@ void VideoPlayer::clearPlaylist(const std::string& playlistName) {
 //========================================================================
 
 void VideoPlayer::deletePlaylist(const std::string& playlistName) {
-  // std::cout << "deletePlaylist needs implementation" << std::endl;
   bool playlistExists = false;
   for (Playlist p : playlistsVector) {
     if (p.name == playlistName) {
@@ -360,13 +349,111 @@ void VideoPlayer::deletePlaylist(const std::string& playlistName) {
 }
 
 //===================================PART 3=====================================
+bool isNumber(std::string& str)
+{
+    for (char const &c : str) {
+        if (std::isdigit(c) == 0) return false;
+    }
+    return true;
+}
 
 void VideoPlayer::searchVideos(const std::string& searchTerm) {
-  std::cout << "searchVideos needs implementation" << std::endl;
+  //works but it is case sensitive! search for Cat as an example
+  std::string userInput;
+  std::vector<std::string> searchedVideoIds;
+  bool foundVideos = false;
+
+  if (videoNameVector.empty()) {
+    for (Video vid : mVideoLibrary.getVideos()) {
+      videoNameVector.push_back(vid.getTitle());
+    }
+    std::sort(videoNameVector.begin(), videoNameVector.end(), condition);
+  }
+  
+  for (std::string title : videoNameVector) {
+    if (title.find(searchTerm) != std::string::npos) {
+      foundVideos = true;
+    }
+  }
+
+  if (foundVideos == true) {
+    std::cout << "Here are the results for " << searchTerm << ":" << std::endl;
+    int i = 1;
+    for (std::string title : videoNameVector) {
+      for (Video vid : mVideoLibrary.getVideos()) {
+        if (vid.getTitle().find(searchTerm) != std::string::npos) {
+          if (vid.getTitle() == title) {
+            std::cout << '\t' << i << ") ";
+            printVideo(vid);
+            i++;
+            searchedVideoIds.push_back(vid.getVideoId());
+          }
+        }
+      }
+    }
+    std::cout << "Would you like to play any of the above? If yes, specify the number of the video." << ":" << std::endl;
+    std::cout << "If your answer is not a valid number, we will assume it's a no." << std::endl;
+    std::cin >> userInput;
+    if (isNumber(userInput) && std::stoi(userInput) > 0 && std::stoi(userInput) <= i) {
+      playVideo(searchedVideoIds[std::stoi(userInput) - 1]);
+    } else {
+      //do nothing, do not play any video
+    }
+  } else {
+    std::cout << "No search results for " << searchTerm << std::endl;
+  }
 }
 
 void VideoPlayer::searchVideosWithTag(const std::string& videoTag) {
-  std::cout << "searchVideosWithTag needs implementation" << std::endl;
+  //very similar to search in title, but we have another depth for searching in the tags vector
+  std::string userInput;
+  std::vector<std::string> searchedVideoIds;
+  bool foundVideos = false;
+
+  if (videoNameVector.empty()) {
+    for (Video vid : mVideoLibrary.getVideos()) {
+      videoNameVector.push_back(vid.getTitle());
+    }
+    std::sort(videoNameVector.begin(), videoNameVector.end(), condition);
+  }
+
+  for (Video vid : mVideoLibrary.getVideos()) {
+    // std::cout << title << std::endl; //DEBUG
+    for (std::string tag : vid.getTags()) {
+      if (tag.find(videoTag) != std::string::npos) {
+        foundVideos = true;
+      }
+    }
+  }
+
+  if (foundVideos == true) {
+    std::cout << "Here are the results for " << videoTag << ":" << std::endl;
+    int i = 1;
+    for (std::string title : videoNameVector) {
+      for (Video vid : mVideoLibrary.getVideos()) {
+        for (std::string tag : vid.getTags()) {
+          if (tag.find(videoTag) != std::string::npos) {
+            if (vid.getTitle() == title) {
+              std::cout << '\t' << i << ") ";
+              printVideo(vid);
+              i++;
+              searchedVideoIds.push_back(vid.getVideoId());
+            }
+          }
+        } 
+      }
+    }
+    std::cout << "Would you like to play any of the above? If yes, specify the number of the video." << ":" << std::endl;
+    std::cout << "If your answer is not a valid number, we will assume it's a no." << std::endl;
+    std::cin >> userInput;
+    if (isNumber(userInput) && std::stoi(userInput) > 0 && std::stoi(userInput) <= i) {
+      playVideo(searchedVideoIds[std::stoi(userInput) - 1]);
+    } else {
+      //do nothing, do not play any video
+    }
+  } else {
+    std::cout << "No search results for " << videoTag << std::endl;
+  }
 }
 
 //===================================PART 4=====================================

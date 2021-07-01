@@ -17,7 +17,7 @@ class VideoPlayer {
   bool videoPaused = false;
   Video currentlyPlayingVideo;
   Video lastPlayedVideo;
-  std::vector<std::string> sortedVideoTitles;
+  std::vector<std::string> videoNameVector;
   std::vector<Playlist> playlistsVector;
 
  public:
