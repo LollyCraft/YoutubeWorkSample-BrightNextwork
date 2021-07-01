@@ -1,4 +1,5 @@
-## The README file has been changed for running the new/changed/added code for the required tasks.
+## Updates:
+The README file has been changed for running the new/changed/added code for the required tasks.
 Make sure that the makefile contains the playlist.h and playlist.cpp, and is adapted to your device (file locations in cmake cache).
 
 # YouTube Challenge - C++
