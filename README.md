@@ -1,3 +1,10 @@
+## Updates:
+The README file has been changed for running the new/changed/added code for the required tasks.
+
+If the tests don't work (build or run) please just import the src folder. 
+
+Make sure that the CMakeLists contains the playlist.h and playlist.cpp, and is adapted to your device (file locations in cmake cache). 
+
 # YouTube Challenge - C++
 
 The C++ YouTube Challenge uses C++ 11, CMake and [GTest](https://google.github.io/googletest/).
