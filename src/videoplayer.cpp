@@ -404,6 +404,8 @@ void VideoPlayer::searchVideos(const std::string& searchTerm) {
   }
 }
 
+//========================================================================
+
 void VideoPlayer::searchVideosWithTag(const std::string& videoTag) {
   //very similar to search in title, but we have another depth for searching in the tags vector
   std::string userInput;
@@ -418,7 +420,6 @@ void VideoPlayer::searchVideosWithTag(const std::string& videoTag) {
   }
 
   for (Video vid : mVideoLibrary.getVideos()) {
-    // std::cout << title << std::endl; //DEBUG
     for (std::string tag : vid.getTags()) {
       if (tag.find(videoTag) != std::string::npos) {
         foundVideos = true;
@@ -457,15 +458,68 @@ void VideoPlayer::searchVideosWithTag(const std::string& videoTag) {
 }
 
 //===================================PART 4=====================================
+//TO DO: to change the playVideo, playRandomVideo, addVideoToPlaylist to not accept flagged videos
 
 void VideoPlayer::flagVideo(const std::string& videoId) {
-  std::cout << "flagVideo needs implementation" << std::endl;
+  // will add a new characheristic to video, a bool flagged
+  for (Video vid : mVideoLibrary.getVideos()) {
+    if (vid.getVideoId() == videoId) {
+      vid.flagged = true;
+    }
+  }
 }
+
+//========================================================================
 
 void VideoPlayer::flagVideo(const std::string& videoId, const std::string& reason) {
-  std::cout << "flagVideo needs implementation" << std::endl;
+  bool videoExists = false;
+
+  for (Video vid : mVideoLibrary.getVideos()) {
+    if (vid.getVideoId() == videoId) {
+      videoExists = true;
+    }
+  }
+  
+  if (videoExists == true) {
+    for (Video vid : mVideoLibrary.getVideos()) {
+      if (vid.getVideoId() == videoId) {
+        if (vid.flagged == false) {
+          vid.flagged = true;
+          vid.flag_reason = reason;
+          std::cout << "Successfully flagged video: " << vid.getTitle() << "(reason: " << vid.flag_reason << ")" << std::endl;
+        } else {
+          std::cout << "Cannot flag video: Video already flagged" << std::endl;
+        }
+      }
+    }
+  } else {
+    std::cout << "Cannot flag video: Video does not exist" << std::endl;
+  }
 }
 
+//========================================================================
+
 void VideoPlayer::allowVideo(const std::string& videoId) {
-  std::cout << "allowVideo needs implementation" << std::endl;
+  bool videoExists = false;
+
+  for (Video vid : mVideoLibrary.getVideos()) {
+    if (vid.getVideoId() == videoId) {
+      videoExists = true;
+    }
+  }
+  
+  if (videoExists == true) {
+    for (Video vid : mVideoLibrary.getVideos()) {
+      if (vid.getVideoId() == videoId) {
+        if (vid.flagged == true) {
+          vid.flagged = false;
+          std::cout << "Successfully removed flag from video: " << vid.getTitle() << std::endl;
+        } else {
+          std::cout << "Cannot remove flag from video: Video is not flagged" << std::endl;
+        }
+      }
+    }
+  } else {
+    std::cout << "Cannot remove flag from video: Video does not exist" << std::endl;
+  }
 }

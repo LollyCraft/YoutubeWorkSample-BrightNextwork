@@ -13,6 +13,9 @@ class Video {
   std::vector<std::string> mTags;
 
  public:
+  bool flagged = false;
+  std::string flag_reason = "Not supplied";
+
   Video();
   
   Video(std::string&& title, std::string&& videoId,
